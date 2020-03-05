@@ -28,9 +28,9 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|email|string||null: false|
-|password|string||null: false|
-|name|string||null: false|
+|email|string|null: false|
+|password|string|null: false|
+|name|string|null: false|
 ### Association
 - had_many :groups,through: :members
 - has_many :messages
@@ -39,8 +39,8 @@ Things you may want to cover:
 ## membersテーブル
 Column|Type|Options|
 |------|----|-------|
-|user|references||null: false, foreign_key: true|
-|group|references||null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 ### Associatiuon
 - belongs_to :user
 - belongs_to :group
@@ -49,7 +49,7 @@ Column|Type|Options|
 
 |Column|Type|Options|
 |------|----|-------|
-|groupname|string||null: false, foreign_key: true|
+|groupname|string|null: false, foreign_key: true|
 ### Association
 - has_many :users,through: :members
 - has_many :members
@@ -58,10 +58,10 @@ Column|Type|Options|
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text||null:false|
-|image|string||null:false|
-|group|refernces||null: false, foreign_key: true|
-|user_id|refernces||null: false, foreign_key: true|
+|body|text|null:false|
+|image|string|null:false|
+|group|refernces|null: false, foreign_key: true|
+|user_id|refernces|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
 - belings_to :group
