@@ -49,7 +49,7 @@ Column|Type|Options|
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|name|string|null: false|
 
 ### Association
 - belongs_to :group
