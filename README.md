@@ -39,8 +39,8 @@ Things you may want to cover:
 ## membersテーブル
 Column|Type|Options|
 |------|----|-------|
-|user|references|null: false, foreign_key: true|
-|group|references|null: false, foreign_key: true|
+|user|references|null: false|
+|group|references|null: false|
 ### Associatiuon
 - belongs_to :user
 - belongs_to :group
@@ -49,7 +49,7 @@ Column|Type|Options|
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, foreign_key: true|
+|name|string|null: false|
 ### Association
 - has_many :users,through: :members
 - has_many :members
@@ -59,7 +59,7 @@ Column|Type|Options|
 |Column|Type|Options|
 |------|----|-------|
 |body|text|
-|image|string|null:false|
+|image|string|
 |group|refernces|null: false, foreign_key: true|
 |user|refernces|null: false, foreign_key: true|
 ### Association
