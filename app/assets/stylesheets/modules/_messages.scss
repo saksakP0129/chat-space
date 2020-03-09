@@ -15,7 +15,6 @@
         background-color: #253141;
         position: relative;
         &--box {
-            // background-color: #333333;
             height: 20px;
             width: 260px;
             position: absolute;
@@ -133,7 +132,6 @@
             padding: 35px 40px;
             
             &__1{
-                // padding-top: 35px;
                 font-size: 16px;
                 color: #333333;
                 display: flex;
@@ -193,9 +191,7 @@
                 display: flex;
                 justify-content: space-between;
                 &--text{
-                    // padding: 0 40px 0 10px;
                     width: 100%;
-                    // background-color: white;
                     position: relative;
                     display: flex;
 
@@ -246,4 +242,3 @@
 }
 
 
-// %input.form__message--type--text--image--file{name: "message[image]",type: "file"}
