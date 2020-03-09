@@ -1,0 +1,38 @@
+
+.main-chat 
+  .main-header
+    .main-header__block
+      .main-header__block--test
+        test
+        .main-header__block--test--member
+          Member : name
+      .main-header__block--edit
+        =link_to"#" do
+          %i.edit
+            Edit
+  .message
+    .message--block
+      .message--block__1
+        masa
+        .message--block__1--day
+          2019/11/20(wed) 17:43:01
+      .message--block__2
+        おはよう！
+      .message--block__3
+        masa
+        .message--block__3--day
+          2019/11/20(wed) 17:43:34
+      .message--block__4
+        今日は夜から雨
+  .form
+    .message
+      .message--type
+        .message--type--text
+          %input.message--type--text--1{placeholder: "type message",type: "text"} 
+          %label.message--type--text--image
+            = icon('fas','image')
+            %input.message--type--text--image--file{name: "message[image]",type: "file"}
+      .message--send
+        =link_to"#" do
+          .send
+            Send
