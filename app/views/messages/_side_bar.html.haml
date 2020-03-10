@@ -5,7 +5,7 @@
         = current_user.name  
       .side-bar__header--box--menu
         .side-bar__header--box--menu--icon
-          =link_to"#" do
+          =link_to new_group_path do
             %i.fas.fa-edit
         .side-bar__header--box--menu--icon2
           =link_to edit_user_path(current_user) do
@@ -13,7 +13,10 @@
   .side-bar__group
     .side-bar__group
       .side-bar__group--text
-        .side-bar__group--text--text1
-          techcamp
-        .side-bar__group--text--text2
-          まだメッセージがありません
+        - current_user.groups.each do |group|
+          .group
+            =link_to '#' do
+              .side-bar__group--text--text1
+                = group.name
+              .side-bar__group--text--text2
+                まだメッセージがありません
