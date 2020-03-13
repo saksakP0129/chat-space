@@ -130,16 +130,17 @@
     .messages{
         background-color: #fafafa;
         height: calc(100vh - 101px - 90px);
+        overflow: auto;
 
         &--block{
-            height: 100%;
             width: 100%;
             padding: 35px 40px;
-            
+            position: relative;
             &__1{
                 font-size: 16px;
                 color: #333333;
                 display: flex;
+                position: absolute;
 
                 &--day{
                     font-size: 12px;
