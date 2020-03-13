@@ -51,11 +51,13 @@ $('#new_message').on('submit', function(e){
     .done(function(data){
         console.log("test");
         var html = buildHTML(data);
+    })
+    .always(function(){
         $('.messages').append(html);      
         $('form')[0].reset();
         $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
         $(".message--send").prop('disabled', false);
-    })
+    })    
     .fail(function() {
         alert("メッセージ送信に失敗しました");
     })
